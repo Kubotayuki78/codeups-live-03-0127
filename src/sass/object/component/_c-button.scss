@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.c-button {
+  display: inline-block;
+  font-weight: $bold;
+  padding: rem(23) 0;
+  background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0%
+    no-repeat padding-box;
+  border: 2px solid currentColor;
+  border-radius: 50px;
+  font-size: rem(14);
+  min-width: rem(200);
+  text-align: center;
+  color: $white;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
